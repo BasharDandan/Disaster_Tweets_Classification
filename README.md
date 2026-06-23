@@ -56,9 +56,9 @@ F1-Score / Precision / Recall: Tracking false positive and false negative balanc
 ### How To Run
 Clone this repository onto your workstation.
 
-Install deep learning and token processing packages: pip install tensorflow numpy pandas matplotlib scikit-learn tensorflow-hub
+Install deep learning and token processing packages: **pip install tensorflow numpy pandas matplotlib scikit-learn tensorflow-hub**
 
-Launch Jupyter Notebook and navigate to NLP_in_TensorFlow.ipynb.
+Launch Jupyter Notebook and navigate to **NLP_in_TensorFlow.ipynb**.
 
 Execute cells sequentially to verify text token boundaries and track validation metric transformations.
 
