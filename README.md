@@ -16,35 +16,56 @@ Models are rigorously benchmarked against standard sequence classification metri
 
 ### Technologies Used
 Python
+
 TensorFlow & Keras Applications
+
 TensorFlow Hub
+
 NumPy
+
 Pandas
+
 Matplotlib
+
 Scikit-Learn
 
 ### Model Architecture
 The text classification benchmark pipeline evaluates multiple deep sequential architectures:
+
 Baseline Pipeline: TF-IDF Vectorization mapped into a Multinomial Naive Bayes classifier.
+
 Dense Feed-Forward Topology: Fully connected layer sequences acting on a custom token-embedded representation.
+
 Recurrent Sequence Layers: Bidirectional LSTMs and GRU cells tracking structural spatial correlations backwards and forwards.
+
 1D Convolutional Networks: Passing localized Conv1D spatial kernels across token dimensions to pick up adjacent word phrases (N-grams).
+
 Transfer Learning Backbones: Deploying a pre-trained sentence encoder wrapper from TensorFlow Hub to generate contextualized vector arrays directly from raw textual sentences.
 
 ### Results
-The pre-trained structural sentence transformer models outperformed baseline sequential wrappers by mining complex context out of conversational text strings. Models were evaluated using rigorous verification arrays:
+The pre-trained structural sentence transformer models outperformed baseline sequential wrappers by mining complex context out of conversational text strings.
+
+Models were evaluated using rigorous verification arrays:
+
 Accuracy: Overall correctness matrix.
+
 Loss: Binary Crossentropy performance curves.
+
 F1-Score / Precision / Recall: Tracking false positive and false negative balances across text classifications.
 
 ### How To Run
 Clone this repository onto your workstation.
+
 Install deep learning and token processing packages: pip install tensorflow numpy pandas matplotlib scikit-learn tensorflow-hub
+
 Launch Jupyter Notebook and navigate to NLP_in_TensorFlow.ipynb.
+
 Execute cells sequentially to verify text token boundaries and track validation metric transformations.
 
 ### Future Improvements
 Expand token architectures to utilize full BERT transformers or fine-tuned sequence-to-sequence (seq2seq) text structures.
+
 Implement character-level sequence processing layers to handle misspelled tokens or unstructured noise.
+
 Scale up text pipelines using multi-class arrays to evaluate multi-label text classification scenarios.
 
